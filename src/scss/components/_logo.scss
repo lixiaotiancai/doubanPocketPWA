@@ -1,0 +1,8 @@
+@import 'helpers/index';
+
+%logo {
+    font-size: 30px;
+    background: linear-gradient(to right, transparent 15%, $light-green 50%, transparent 85%);
+    color: #fff;
+    text-shadow: 0 0 10px $shadow-green;
+}

@@ -1,0 +1,65 @@
+@import 'components/search';
+@import 'components/slideSlot';
+@import 'components/list';
+@import 'components/navBar';
+@import 'components/toTop';
+@import 'components/toHome';
+
+.searchPage {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+
+  .search-wrapper {
+    position: relative;
+    top: 0;
+    .search {
+      @extend %search;
+    }
+  }
+
+  .slideSlot-container {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 0;
+    margin-bottom: 50px;
+    .slideSlot {
+      @extend %slideSlot;
+    }
+  }
+
+  .searchlist-wrapper {
+    .search-list {
+      @extend %search-list;
+    }
+  }
+
+  .navBar-wrapper {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 9999;
+    .navBar {
+      @extend %navBar;
+    }
+  }
+
+  .toTop-wrapper {
+    position: fixed;
+    right: 50px;
+    bottom: 100px;
+    .toTop {
+      @extend %toTop;
+    }
+  }
+
+  .toHome-wrapper {
+    position: fixed;
+    right: 50px;
+    bottom: 160px;
+    .toHome {
+      @extend %toHome;
+    }
+  }
+}

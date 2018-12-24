@@ -1,0 +1,38 @@
+%backButton {
+  position: absolute;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
+  top: 5px;
+  left: 25px;
+  width: 50px;
+  height: 80%;
+  background-color: #63B8FF;
+  &::before {
+    border: 20px solid;
+    border-width: 20px;
+    border-color: transparent transparent #63B8FF transparent;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 0;
+    left: -40px;
+    content: '';
+    transform: rotate(-90deg);
+  }
+  &:active {
+    background-color: #3A5FCD;
+  }
+  &:active.backButton::before{
+    border-color: transparent transparent #3A5FCD transparent;
+  }
+  .icon-back {
+    position: absolute;
+    top: 5px;
+    left: -12px;
+    font-size: 20px;
+  }
+}

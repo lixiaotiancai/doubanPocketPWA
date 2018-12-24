@@ -1,0 +1,26 @@
+@import 'helpers/index';
+
+%navBar {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  background-color: $light-grey;
+  .navBar-item {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000;
+    font-size: 12px;
+    &:active {
+      background-color: $grey;
+    }
+  }
+  .navBar-item-icon {
+    font-size: 19px;
+  }
+  .active-item {
+    color: $blue;
+  }
+}
+

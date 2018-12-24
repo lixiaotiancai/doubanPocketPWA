@@ -1,0 +1,43 @@
+@import 'components/header';
+@import 'components/backButton';
+@import 'components/likeButton';
+@import 'components/detail';
+@import 'components/toHome';
+
+.detailPage {
+  position: relative;
+  width: 100%;
+
+  .header-wrapper {
+    position: relative;
+    top: 0;
+    left: 0;
+    .header {
+      @extend %header;
+    }
+  }
+
+  .backButton {
+    @extend %backButton;
+  }
+
+  .likeButton {
+    @extend %likeButton;
+  }
+
+  .detail-wrapper {
+    padding: 8px;
+    .detail {
+      @extend %detail;
+    }
+  }
+
+  .toHome-wrapper {
+    position: fixed;
+    right: 50px;
+    bottom: 100px;
+    .toHome {
+      @extend %toHome;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@import 'helpers/index';
+
+%toTop {
+  width: 40px;
+  height: 40px;
+  background-color: $blue;
+  opacity: 0.6;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
+  border-radius: 10px;
+  font-size: 30px;
+  color: $light-grey;
+  &:active {
+    opacity: 1;
+  }
+}
