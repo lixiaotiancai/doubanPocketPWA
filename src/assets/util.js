@@ -142,6 +142,8 @@ const fetchJsonp = (url, option) => {
         str += item.replace('=', '_') + '_'
       })
 
+      str = encodeURIComponent(str).replace(/[^\w]/g, '')
+
       return str
     }
 
